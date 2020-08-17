@@ -10,14 +10,17 @@ public:
     EmployeeLinkedList();
     ~EmployeeLinkedList();
     void AddToFront(Employee* employee);
+    void AddToEnd(Employee* employee);
     EmployeeNode* RemoveFromFront();
-    void PrintList();
+    EmployeeNode* RemoveFromEnd();
+    void Print();
     unsigned int GetSize();
     bool IsEmpty();
 
 private:
     EmployeeNode* head_{nullptr};
-    unsigned int size_;
+    EmployeeNode* tail_{nullptr};
+    unsigned int size_{0};
 };
 
 #endif /* EMPLOYEE_LINKED_LIST_H */

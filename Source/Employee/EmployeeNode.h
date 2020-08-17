@@ -12,6 +12,7 @@ public:
 
 private:    
     Employee* employee_{nullptr};
+    EmployeeNode* previous_{nullptr};
     EmployeeNode* next_{nullptr};
 
     friend class EmployeeLinkedList;

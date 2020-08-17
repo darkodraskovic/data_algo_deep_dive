@@ -1,4 +1,8 @@
-# Minimal cmake boilerplate
+# Data Structures and Algorithms: Deep Dive Using C++ (instead of JAVA)
+
+C++ code for Udemy course [Data Structures and Algorithms: Deep Dive Using Java](https://www.udemy.com/course/data-structures-and-algorithms-deep-dive-using-java/).
+
+## Installation
 
 Install [clangd](https://clangd.llvm.org/installation.html).
 
@@ -15,3 +19,4 @@ make
 ```
 ln -s build/compile_commands.json .
 ```
+
