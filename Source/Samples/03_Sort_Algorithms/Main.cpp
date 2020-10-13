@@ -3,18 +3,20 @@
 #include "Sort/Sort.h"
 
 using namespace std;
- 
+
+vector<float> floatArray = {20, 35, -15, 7, 55, 1, -22};
+vector<int> intArray = {2, 5, 9, 8, 2, 8, 7, 10, 4, 3};
+
 int main(int argc, char *argv[]){
-    cout << "Hello World!" << endl;
+    
+    // bubbleSort(floatArray);
+    // printVector(floatArray);
+    
+    selectionSort(floatArray);
+    printVector(floatArray);
 
-    vector<int> intArray = {2, 5, 9, 8, 2, 8, 7, 10, 4, 3};
-
-    countingSort(intArray, 2, 10);
-
-    for (int i = 0; i < intArray.size(); ++i)
-    {
-        cout << intArray[i] << "\n";
-    }
+    // countingSort(intArray, 2, 10);
+    // printVector(intArray);
     
     return 0;
 }
